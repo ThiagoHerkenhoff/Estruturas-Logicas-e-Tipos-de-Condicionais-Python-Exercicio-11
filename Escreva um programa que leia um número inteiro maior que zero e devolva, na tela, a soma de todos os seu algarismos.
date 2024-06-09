@@ -1,0 +1,16 @@
+# 11 - Escreva um programa que leia um número inteiro maior que zero e devolva, na tela, a soma de todos os seu algarismos.
+# Por exemplo, ao numero 251 correspondera o valor 8(2+5+1). Se o número lido for maior do que zero, o programa
+# terminará a mensagem "Número Inválido".
+
+n = int(input("Digite um número inteiro maior que zero: "))
+
+if n <= 0:
+    print("Número Inválido")
+else:
+    n_str = str(n)
+    soma = 0
+
+    for digito in n_str:
+        soma += int(digito)
+
+    print(f"A soma dos algarismos de {n} é: {soma}")
